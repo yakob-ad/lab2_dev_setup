@@ -14,6 +14,13 @@ export function helloWorld() {
 }
 
 /**
+ * This function triggers a browser alert displaying the message 'Hello World'
+ */
+export function helloWorld_alertDialog() {
+    alert('Hello World');
+}
+
+/**
  * This function adds two numbers together and returns the sum. This demonstrates
  * how to pass parameters to a function and return a value from a function
  * from HTML.

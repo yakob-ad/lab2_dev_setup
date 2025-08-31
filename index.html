@@ -15,7 +15,12 @@
   <p>
     <button  onclick="helloWorld()">Prints Hello World to the Developer console</button>
   </p>
+  <p>
+    <button  onclick="helloWorld_alertDialog()">Display Alert Dialog with Message Hello World</button>
+  </p>
+
   <hr>
+
   <form id="addForm">
     <label for="num1">Number 1:</label>
     <input type="number" id="num1" name="num1" required>
@@ -37,12 +42,22 @@
   <button id="jokeButtonTable">Get a  5 Random Jokes</button>
   <table id="jokeTable"></table>
 
+  <hr>
+  <ul>
+    <li>Name: Yakob Adera</li>
+    <li>Graduation Date: May 2026</li>
+    <li>Currently Occupied as Web Developer: NO</li>
+    <li>Has interned/worked as web developer in the past: NO</li>
+  </ul>
+  <img id="profilePic" src="./img/picture.png" alt="My Picture" width="200" height="200">
+
   <script type="module" script="js/main.js">
-    import {helloWorld, add, fetchRandomJoke, fetch5RandomJokes} from './js/main.js';
+    import {helloWorld, helloWorld_alertDialog, add, fetchRandomJoke, fetch5RandomJokes} from './js/main.js';
 
     // This shows how to assign a function to the window object
     // so that it can be called from the browser console
     window.helloWorld = helloWorld;
+    window.helloWorld_alertDialog = helloWorld_alertDialog;
 
     // This shows how to add an event listener to a button in the HTML
     // and call a function when the button is clicked
